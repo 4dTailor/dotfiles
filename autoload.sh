@@ -2,4 +2,4 @@
 # ln -sf $PWD/.bashrc ~/.bashrc
 ln -sf $PWD/.gitconfig ~/.gitconfig
 
-print("Successfully set symbolic links to files")
+echo "Successfully set symbolic links to files"
