@@ -1,7 +1,5 @@
 # Dotfiles How To
 
-1. Link files from `dotfiles` folder to HOME directory
-```
-ln -s -f ./.bashrc ~/.bashrc
-ln -s -f ./.gitconfig ~/.gitconfig
-```
+1. Check autoload.sh script
+2. Run `sudo chmod u+x ./autoload.sh` to make the script runnable
+3. Run `./autoload.sh` to run the script
