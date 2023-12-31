@@ -117,5 +117,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Init Oh My Posh
 eval "$(oh-my-posh init bash)"
+# eval "$(oh-my-posh init bash --config https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/craver.omp.json)"
+
 export PATH=$PATH:~/.local/bin
