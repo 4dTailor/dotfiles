@@ -1,6 +1,6 @@
 [user]
-	name = skyQuiz
-	email = 91608035+skyQuiz@users.noreply.github.com
+	name = 4dTailor
+	email = 91608035+4dTailor@users.noreply.github.com
 [core]
 	autocrlf = input
 [filter "lfs"]
@@ -8,3 +8,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+	defaultBranch = main
+[init]
