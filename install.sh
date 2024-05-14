@@ -15,9 +15,9 @@ fi
 
 
 # Install Oh My Posh on the system
-echo "$SCRIPT_NAME - Installing oh-my-posh"
 mkdir -p ~/.local/bin ~/.local/lib
 if [ ! -f ~/.local/bin/oh-my-posh ]; then
+    echo "$SCRIPT_NAME - Installing oh-my-posh"
     curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 fi
 
@@ -38,6 +38,7 @@ ln -sf $SCRIPT_DIR/.gitconfig ~/.gitconfig
 
 if [ -e /etc/i3 ]; then
     ln -sf $SCRIPT_DIR/i3/config ~/.config/i3/config
+    ln -sf $SCRIPT_DIR/i3status/config ~/.config/i3status/config
 else
     echo -e "$SCRIPT_NAME - ${CL_WARN}[WARN] I3 not installed, not adding I3 config"
 fi

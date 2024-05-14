@@ -119,7 +119,7 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
-neofetch
+# neofetch
 
 # Init Oh My Posh
 # eval "$(oh-my-posh init bash)"
