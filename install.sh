@@ -36,11 +36,17 @@ echo -e "$SCRIPT_NAME - ${CL_WARN}[INFO] Symlinking config files"
 ln -sf $SCRIPT_DIR/.bashrc ~/.bashrc 
 ln -sf $SCRIPT_DIR/.gitconfig ~/.gitconfig
 
-if [ -e /etc/i3 ]; then
-    ln -sf $SCRIPT_DIR/i3/config ~/.config/i3/config
-    ln -sf $SCRIPT_DIR/i3status/config ~/.config/i3status/config
+if [ -f /usr/bin/i3 ]; then
+    ln -sf $SCRIPT_DIR/i3/ ~/.config/i3
+    ln -sf $SCRIPT_DIR/i3status/ ~/.config/i3status
 else
     echo -e "$SCRIPT_NAME - ${CL_WARN}[WARN] I3 not installed, not adding I3 config"
+fi
+
+if [ -f /usr/bin/polybar ]; then
+    ln -sf $SCRIPT_DIR/polybar/ ~/.config/polybar
+else
+    echo -e "$SCRIPT_NAME - ${CL_WARN}[WARN] Polybar not installed, not adding Polybar config"
 fi
 
 echo -e "$SCRIPT_NAME - [INFO] Remember to set Agave Nerd Font Mono to the terminal"
