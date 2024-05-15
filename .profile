@@ -27,4 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # use the console tdm display manager
-/usr/local/bin/tdm
+source /usr/local/bin/tdm
