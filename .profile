@@ -25,6 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-# use the console tdm display manager
-source /usr/local/bin/tdm
