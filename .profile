@@ -18,10 +18,15 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
+    export PATH="$HOME/.local/bin:$PATH"
 fi
+
+export XDG_DATA_DIR=/var/lib/flatpak/exports/share:/home/skyquiz/.local/share/flatpak/exports/share
+
+# linux-wallpaperengine --screen-root eDP 951259031 &
+# firefox &
