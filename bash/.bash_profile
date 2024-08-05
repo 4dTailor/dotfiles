@@ -1,8 +1,4 @@
-# ~/.profile: executed by the command interpreter for login shells.
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
-# see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
+# ~/.bash_ profile: executed by the command interpreter for login shells.
 
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
@@ -27,6 +23,3 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export XDG_DATA_DIR=/var/lib/flatpak/exports/share:/home/skyquiz/.local/share/flatpak/exports/share
-
-# linux-wallpaperengine --screen-root eDP 951259031 &
-# firefox &
