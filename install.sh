@@ -38,15 +38,4 @@ ln -svf $SCRIPT_DIR/.gitconfig ~/.gitconfig
 ln -svf $SCRIPT_DIR/.profile ~/.profile
 
 
-if [ -f /usr/bin/i3 ]; then
-    ln -svf $SCRIPT_DIR/i3/ ~/.config/i3
-    if [ -f /usr/bin/i3blocks ]; then
-        ln -sf $SCRIPT_DIR/i3blocks ~/.config/i3blocks
-    else
-        echo -e "$SCRIPT_NAME - ${CL_WARN}[WARN] i3blocks not installed, not adding i3blocks config"
-    fi
-else
-    echo -e "$SCRIPT_NAME - ${CL_WARN}[WARN] I3 not installed, not adding I3 config"
-fi
-
 echo -e "$SCRIPT_NAME - [INFO] Remember to set Agave Nerd Font Mono to the terminal"
